@@ -1,0 +1,54 @@
+### Test the /ask endpoint for the agent backend
+
+# 1. Basic question
+POST http://localhost:3008/ask
+Content-Type: application/json
+
+{
+  "question": "How long will shipping take to Europe?"
+}
+
+###
+# 2. Brewing guide request
+POST http://localhost:3008/ask
+Content-Type: application/json
+
+{
+  "question": "What's the best way to brew pour-over coffee for 4 people?"
+}
+
+###
+# 3. Coffee info request
+POST http://localhost:3008/ask
+Content-Type: application/json
+
+{
+  "question": "Tell me about your Ethiopian coffees"
+}
+
+###
+# 4. Store location request
+POST http://localhost:3008/ask
+Content-Type: application/json
+
+{
+  "question": "Where is the NYC location?"
+}
+
+###
+# 5. Coffee club modal trigger
+POST http://localhost:3008/ask
+Content-Type: application/json
+
+{
+  "question": "How do I join the coffee club?"
+}
+
+###
+# 6. General support request
+POST http://localhost:3008/ask
+Content-Type: application/json
+
+{
+  "question": "I need help with my order."
+}
